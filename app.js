@@ -16,6 +16,7 @@ console.log("hello- world");
 const kmInputElement = document.getElementById("km");
 const ageInputElement = document.getElementById("age");
 const buttonSubmit = document.getElementById("submit");
+const ticketElement = document.getElementById("ticket");
 
 console.dir(kmInputElement, ageInputElement);
 
@@ -28,12 +29,19 @@ buttonSubmit.addEventListener("click", function () {
   const km = parseInt(kmInputElement.value);
   const age = parseInt(ageInputElement.value);
 
+  // sconto = 0;
   if (age < 18) {
     sconto = age * 0.2;
   } else if (age > 65) {
     sconto = age * 0.4;
+  } else {
+    sconto = age * 1;
   }
 
   console.log(km, typeof km, age);
   console.log(sconto.toFixed(2));
+
+  ticketElement.innerHTML = `Totally tavled (${km} km) and  has  been suscessfull purched the ticket here is yout total prize ${
+    sconto.toFixed(2) + " &euro;"
+  }`;
 });
