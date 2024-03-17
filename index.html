@@ -14,23 +14,37 @@
   <body>
     <section class="py-5">
       <div class="container">
-        <div class="mb-3">
-          <label for="km" class="form-label">KM</label>
-          <input
-            type="text"
-            class="form-control"
-            id="km"
-            placeholder="inserici i km percorsi"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="age" class="form-label">ETA</label>
-          <input
-            type="text"
-            class="form-control"
-            id="age"
-            placeholder="inserici l'eta"
-          />
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="km" class="form-label">KM</label>
+              <input
+                type="text"
+                class="form-control"
+                id="km"
+                placeholder="inserici i km percorsi"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">ETA</label>
+              <input
+                type="text"
+                class="form-control"
+                id="age"
+                placeholder="inserici l'eta"
+              />
+            </div>
+          </div>
+          <div class="col-6 text-center py-3">
+            <div class="card">
+              <h2>Your online ticket</h2>
+              <hr />
+              <p id="html-text">
+                Here is you ticket from Milano to Genova <br />
+                the totale price is
+              </p>
+            </div>
+          </div>
         </div>
         <button id="submit" class="btn btn-primary">click here</button>
       </div>
