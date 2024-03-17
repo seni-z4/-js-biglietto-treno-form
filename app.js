@@ -1,8 +1,9 @@
 console.log("hello-world");
 
-//creare un form con boostrap
-//create un input di km
-//create un input di age
+//creare un form con boostrap //created
+
+//create un input di km //created
+//create un input di age//created
 //creare un button
 
 //quando l'utente click la cta
